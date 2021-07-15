@@ -34,3 +34,25 @@ I am looking into a stack of technologies like this:
 * WebPack
 
 *...And this list is always increase* :new: :+1:
+
+### Experience:
+**Examples** of my code can be looked at my:
+
+[Codewars](https://www.codewars.com/users/frodi_bjorn) | [GitHub](https://github.com/frodiBjorn)
+------------ | -------------
+
+*or here a small random example of code* :arrow_heading_down:
+```javascript
+function isPalindrome(line) {
+  let strLine = String(line);
+  let  b = strLine.split('').reverse().join('');
+  if (b===strLine) {
+    return true;  
+  }
+  return false;
+}
+```
+
+### Languages:
+:ru: Russian: native
+:gb: English: A2-B1
