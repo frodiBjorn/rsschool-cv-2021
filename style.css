@@ -85,12 +85,9 @@ section{
 }
 /* style for footer */
 .footer{
-    display: flex;
-    justify-content: space-around;
-    padding: 10px;;
+    text-align: center;
 }
-
 .footer_img{
-    flex: 1;
     max-width: 50px;
+    margin: 0 auto;
 }
