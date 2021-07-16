@@ -1,0 +1,93 @@
+body{
+    background-color:#1D315F;
+    margin: 0;
+    padding: 0;
+}
+.wrapper{
+    margin: 0 auto;
+    max-width: 1200px;
+    background-color: #fff;
+    
+    
+}
+h1,h2,h3{
+    margin: 0;
+    padding: 0;
+}
+h3{
+    font-weight: 800;
+    font-size: 26px;
+
+}
+section{
+    padding: 10px 20px;
+    max-width: 1200px;
+}
+/* style for header */
+.header{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    background-color: #EFF1F6;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+.header img{
+    max-width: 200px;
+    border-radius: 5%;
+}
+/* style for contacts */
+.contacts li{
+    list-style-type: none;
+    line-height: 30px;
+}
+.contacts li span{
+    font-weight: 600;
+}
+.contacts ul{
+    padding: 0px;
+    margin: 10px;
+}
+/* style for education */
+.education{
+    background-color: #EFF1F6;
+    
+}
+.education img{
+    max-width: 500px;
+}
+/* style for work */
+.work{
+    max-width: 800px;
+}
+/* style for about */
+.about{
+    background-color: #EFF1F6;
+}
+.about__item-italic{
+    font-style: italic;
+}
+/* style for experience */
+.experience{
+
+}
+.experience table{
+    border-spacing: 0px;
+}
+.experience table th{
+    border: 1px solid black;
+    padding: 5px;
+}
+/* style for languages */
+.languages{
+    background-color: #EFF1F6;
+}
+/* style for footer */
+.footer{
+    text-align: center;
+}
+.footer_img{
+    max-width: 50px;
+    margin: 0 auto;
+}
