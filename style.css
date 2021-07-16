@@ -83,3 +83,18 @@ section{
 .languages{
     background-color: #EFF1F6;
 }
+/* style for footer */
+.footer{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;;
+}
+
+.footer_img{
+    flex: 1;
+    max-width: 50px;
+    
+    
+    
+    
+}
