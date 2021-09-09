@@ -133,6 +133,9 @@ section{
     background: rgb(230,226,31);
     background: linear-gradient(90deg, rgba(230,226,31,1) 0%, rgba(232,192,136,1) 100%);
 }
+.experience a:hover{
+    color: #fff;
+}
 .experience table{
     border-spacing: 0px;
     max-height: 50px;
