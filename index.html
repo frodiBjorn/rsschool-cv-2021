@@ -6,23 +6,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
     <title>CV</title>
 </head>
 <body>
     <header class="header">
         <div>
-            <h1>CV</h1>
-            <h2>IVAN FEDOTOVSKY</h2>
-        </div>
-        <div>
             <img
                 src="https://sun9-7.userapi.com/impf/c855428/v855428714/1093a3/BFBJXPDnI7E.jpg?size=864x1080&quality=96&sign=0b21394f2af9786247a699383ce7634d&type=album"
                 alt="avatar">
-            </div>
+        </div>
+        <article>
+            <h1>CV</h1>
+            <h2>IVAN FEDOTOVSKY</h2>
+        </article>
+        
     </header>
     <div class="wrapper">
+        <nav class="nav">
+            <div>
+                <a href="#Contacts"><h4 href=>Contacts</h4></a>
+            </div>
+            <div>
+                <a href="#Education"><h4>Education</h4></a>
+            </div>
+            <div>
+                <a href="#Work"><h4>Work</h4></a>
+            </div>
+            <div>
+                <a href="#About"><h4>About me</h4></a>
+            </div>
+            <div>
+                <a href="#Experience"><h4>Experience</h4></a>
+            </div>
+            <div>
+                <a href="#Languages"><h4 >Languages</h4></a>
+            </div>
+        </nav>
         <main>
-            <section class="contacts">
+            <section id="Contacts" class="contacts">
                 <h3>My contacts:</h3>
                 <ul>
                     <li><span>email: </span><a href="https://www.gmail.com">fedotovsky96@gmail.com</a></li>
@@ -30,7 +54,7 @@
                     <li><span>github: </span><a href="https://github.com/frodiBjorn">@frodiBjorn</a></li>
                 </ul>
             </section>
-            <section class="education">
+            <section id="Education" class="education">
                 <h3>Education:</h3>
                 <img src="https://ssau.ru/pagefiles/of_docs/logo_osnovnoy_goriz_ENG.png" alt="ssau logo">
                 <div>
@@ -38,7 +62,7 @@
                     <span>- Faculty of Mechanics and Mathematics, major - information security</span>
                 </div>
             </section>
-            <section class="work">
+            <section id="Work" class="work">
                 <h3>Work:</h3>
                 <p>
                     <b>In the past</b>, I worked as a hookah man, a counselor in a camp, an assistant to a system
@@ -50,7 +74,7 @@
                     programming.
                 </p>
             </section>
-            <section class="about">
+            <section id="About" class="about">
                 <h3>About me:</h3>
                 <p>I want to become a <b>frontend developer</b>.</p>
                 <p>I am looking into a stack of technologies like this:</p>
@@ -67,18 +91,43 @@
                 </ul>
                 <p class="about__item-italic">...And this list is always increase</p>
             </section>
-            <section class="experience">
+            <section id="Experience" class="experience">
                 <h3>Experience:</h3>
                 <p><b>Examples</b> of my code can be looked at my:</p>
-                <table>
-                    <tr>
-                        <th><a href="https://www.codewars.com/users/frodi_bjorn">Codewars</a></th>
-                        <th><a href="https://github.com/frodiBjorn">GitHub</a></th>
-                    </tr>
-
-                </table>
+                <div class="examples">
+                    <table>
+                        <tr>
+                            <th><a href="https://www.codewars.com/users/frodibjorn">Codewars</a></th>
+                            <th><a href="https://github.com/frodiBjorn">GitHub</a></th>
+                        </tr>
+                    </table>
+                    <aside class="aside">
+                        <pre>
+                            <code>
+function nicknameGenerator(name){
+    const vowels = ['a', 'e', 'i', 'o', 'u'];
+    if(name.length < 4){return "Error: Name too short"}
+    if(vowels.includes(name[2])){
+        return name.slice(0,4)
+    } 
+    return name.slice(0,3)
+}
+                            </code>
+                        </pre>
+                    </aside>
+                    <div class="projects">
+                        <h5>Projects:</h5>
+                        <div class="items">
+                            <ul>
+                                <li><a href="https://rolling-scopes-school.github.io/frodibjorn-JSFEPRESCHOOL/custom-video-player/"><img src="https://user-images.githubusercontent.com/79738906/132670243-6ba8621f-4fa5-420f-8390-38c53279f4a0.png" alt="custom-video-player"></a></li>
+                                <li><a href="https://rolling-scopes-school.github.io/frodibjorn-JSFEPRESCHOOL/clock/"><img src="https://user-images.githubusercontent.com/79738906/130188753-f58135ca-73d8-4a65-ba79-847a9c656366.png" alt="clock"></a></li>
+                                <li><a href="https://rolling-scopes-school.github.io/frodibjorn-JSFEPRESCHOOL/museum/"><img src="https://user-images.githubusercontent.com/79738906/127361104-00f1a344-4d8d-4685-b537-44844aa48d33.png" alt="museum"> </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </section>
-            <section class="languages">
+            <section id="Languages" class="languages">
                 <h3>Languages:</h3>
                 <p>Russian: native</p>
                 <p>English: A2-B1</p>
