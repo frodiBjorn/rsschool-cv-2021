@@ -21,30 +21,34 @@
         <article>
             <h1>CV</h1>
             <h2>IVAN FEDOTOVSKY</h2>
-        </article>
-        
+        </article>       
     </header>
     <div class="wrapper">
-        <nav class="nav">
-            <div>
-                <a href="#Contacts"><h4 href=>Contacts</h4></a>
+        <div class="burger-wrapper">
+            <div class="burger">
+                <img class="burger-btn" src="./svg/free-icon-menu-55002.svg" alt="burger">
             </div>
-            <div>
-                <a href="#Education"><h4>Education</h4></a>
-            </div>
-            <div>
-                <a href="#Work"><h4>Work</h4></a>
-            </div>
-            <div>
-                <a href="#About"><h4>About me</h4></a>
-            </div>
-            <div>
-                <a href="#Experience"><h4>Experience</h4></a>
-            </div>
-            <div>
-                <a href="#Languages"><h4 >Languages</h4></a>
-            </div>
-        </nav>
+            <nav class="nav">
+                <div>
+                    <a href="#Contacts"><h4>Contacts</h4></a>
+                </div>
+                <div>
+                    <a href="#Education"><h4>Education</h4></a>
+                </div>
+                <div>
+                    <a href="#Work"><h4>Work</h4></a>
+                </div>
+                <div>
+                    <a href="#About"><h4>About me</h4></a>
+                </div>
+                <div>
+                    <a href="#Experience"><h4>Experience</h4></a>
+                </div>
+                <div>
+                    <a href="#Languages"><h4>Languages</h4></a>
+                </div>
+            </nav>      
+        </div>
         <main>
             <section id="Contacts" class="contacts">
                 <h3>My contacts:</h3>
@@ -106,7 +110,7 @@
                             <code>
 function nicknameGenerator(name){
     const vowels = ['a', 'e', 'i', 'o', 'u'];
-    if(name.length < 4){return "Error: Name too short"}
+    if(name.length &lt; 4){return "Error: Name too short"}
     if(vowels.includes(name[2])){
         return name.slice(0,4)
     } 
@@ -147,6 +151,7 @@ function nicknameGenerator(name){
             </div>
         </footer>
     </div>
+    <script src="index.js"></script>
 </body>
 
 </html>
