@@ -149,6 +149,10 @@ section{
 .projects li{
     margin-bottom: 10px;
 }
+.items p{
+    font-size: 20px;
+    font-weight: 600;
+}
 
 /* style for languages */
 
